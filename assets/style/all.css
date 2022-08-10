@@ -11568,10 +11568,33 @@ body {
   font-family: 'Lato', 'Roboto Mono', monospace, "Noto Sans TC", "sans-serif";
 }
 
-.nav-dashboard {
+header {
+  margin-left: 296px;
+  padding: 32px 0;
+}
+
+main {
+  margin-left: 296px;
+  padding-bottom: 32px;
+}
+
+.fs-7 {
+  font-size: 12px;
+}
+
+.ff-roboto-mono {
+  font-family: 'Roboto Mono';
+}
+
+.dashboard {
   min-width: 296px;
   min-height: 100vh;
   position: fixed;
+}
+
+.dashboard-user {
+  padding-left: 32px;
+  padding-bottom: 32px;
 }
 
 .nav-link {
@@ -11580,16 +11603,47 @@ body {
   position: relative;
 }
 
-.nav-link:hover {
+.nav-link:hover, .nav-link.active {
   color: #198754;
 }
 
-.nav-logo {
-  padding: 32px;
+.nav-link.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 4px;
+  height: 32px;
+  border-left: 4px solid #198754;
 }
 
-.main {
-  margin-left: 296px;
+.expand_more {
+  display: inline-block;
+}
+
+.expand_less {
+  display: none;
+}
+
+.show .expand_more {
+  display: none;
+}
+
+.show .expand_less {
+  display: inline-block;
+}
+
+.icon {
+  color: #212529;
+}
+
+.icon:hover {
+  color: #198754;
+}
+
+.list-group-item.active {
+  color: #000;
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
 }
 
 /*# sourceMappingURL=all.css.map */
