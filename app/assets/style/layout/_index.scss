@@ -1,0 +1,27 @@
+.expand_more {
+    display: inline-block;
+}
+.expand_less {
+    display: none;
+}
+
+.show .expand_more {
+    display: none;
+}
+  
+.show .expand_less {
+    display: inline-block;
+}
+
+.icon {
+    color: $gray-900;
+    &:hover {
+        color: $success;
+    }
+}
+
+.list-group-item.active {
+    color: $black;
+    background-color: $gray-100;
+    border: 1px solid $gray-400;
+}
