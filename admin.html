@@ -94,7 +94,7 @@
             </thead>
             <tbody class="table-group-divider">
               <tr>
-                <td class="py-3">#1</td>
+                <th scope="row" class="py-3">#1</td>
                 <td class="py-3">Emir Wicks</td>
                 <td class="py-3">emir.wicks@mail.com</td>
                 <td class="py-3">Yes</td>
@@ -108,7 +108,7 @@
                 </td>
               </tr>
               <tr>
-                <td class="py-3">#2</td>
+                <th scope="row" class="py-3">#2</td>
                 <td class="py-3">Zaina Goldsmith</td>
                 <td class="py-3">zaina.goldsmith@mail.com</td>
                 <td class="py-3">Yes</td>
@@ -122,7 +122,7 @@
                 </td>
               </tr>
               <tr>
-                <td class="py-3">#3</td>
+                <th scope="row" class="py-3">#3</td>
                 <td class="py-3">Mahima Lopez</td>
                 <td class="py-3">mahima.lopez@mail.com</td>
                 <td class="py-3">Yes</td>
@@ -136,7 +136,7 @@
                 </td>
               </tr>
               <tr>
-                <td class="py-3">#4</td>
+                <th scope="row" class="py-3">#4</td>
                 <td class="py-3">Pharrell Murray</td>
                 <td class="py-3">pharrell.murray@mail.com</td>
                 <td class="py-3">Yes</td>
@@ -150,7 +150,7 @@
                 </td>
               </tr>
               <tr>
-                <td class="py-3">#5</td>
+                <th scope="row" class="py-3">#5</td>
                 <td class="py-3">Annika Mcbride</td>
                 <td class="py-3">annika.mcbride@mail.com</td>
                 <td class="py-3">Yes</td>
@@ -164,7 +164,7 @@
                 </td>
               </tr>
               <tr>
-                <td class="py-3">#6</td>
+                <th scope="row" class="py-3">#6</td>
                 <td class="py-3">Fatimah Clark</td>
                 <td class="py-3">fatimah.clark@mail.com</td>
                 <td class="py-3">Yes</td>
@@ -178,7 +178,7 @@
                 </td>
               </tr>
               <tr>
-                <td class="py-3">#7</td>
+                <th scope="row" class="py-3">#7</td>
                 <td class="py-3">Klaudia Rhodes</td>
                 <td class="py-3">klaudia.rhodes@mail.com</td>
                 <td class="py-3">Yes</td>
@@ -192,7 +192,7 @@
                 </td>
               </tr>
               <tr>
-                <td class="py-3">#8</td>
+                <th scope="row" class="py-3">#8</td>
                 <td class="py-3">Tillie Lucero</td>
                 <td class="py-3">tillie.lucero@mail.com</td>
                 <td class="py-3">Yes</td>
@@ -206,7 +206,7 @@
                 </td>
               </tr>
               <tr>
-                <td class="py-3">#9</td>
+                <th scope="row" class="py-3">#9</td>
                 <td class="py-3">Sabrina Stephenson</td>
                 <td class="py-3">sabrina.stephenson@mail.com</td>
                 <td class="py-3">Yes</td>
@@ -220,7 +220,7 @@
                 </td>
               </tr>
               <tr>
-                <td class="py-3">#10</td>
+                <th scope="row" class="py-3">#10</td>
                 <td class="py-3">Annie Smith</td>
                 <td class="py-3">annie.smith@mail.com</td>
                 <td class="py-3">Yes</td>
@@ -263,7 +263,7 @@
 
 <!-- Add New user -->
 <div class="modal fade" id="add-user-modal" tabindex="-1" aria-labelledby="add-user-modalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title fw-bold" id="add-user-modal-label">New Admin</h4>
@@ -274,11 +274,11 @@
                 <!-- Account -->
                 <h5 class="mb-3 fw-bold">Account</h5>
                 <div class="mb-3 small">
-                  <label for="name" class="col-form-label pt-0 pb-1 w-100">Name</label>
+                  <label for="name" class="col-form-label pt-0 pb-1">Name</label>
                   <input type="text" class="form-control py-2" id="name">
                 </div>
                 <div class="mb-3 small">
-                    <label for="email" class="col-form-label pt-0 pb-1 w-100">Email</label>
+                    <label for="email" class="col-form-label pt-0 pb-1">Email</label>
                     <input type="email" class="form-control py-2" id="email">
                 </div>
 
@@ -338,7 +338,7 @@
 
 <!-- Edit user -->
 <div class="modal fade" id="edit-user-modal" tabindex="-1" aria-labelledby="edit-user-modalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title fw-bold" id="edit-user-modal-label">Edit Admin</h4>
@@ -349,11 +349,11 @@
               <!-- Account -->
               <h5 class="mb-3 fw-bold">Account</h5>
               <div class="mb-3 small">
-                <label for="name" class="col-form-label pt-0 pb-1 w-100">Name</label>
+                <label for="name" class="col-form-label pt-0 pb-1">Name</label>
                 <input type="text" class="form-control py-2" id="name" value="Emir Wicks" readonly>
               </div>
               <div class="mb-3 small">
-                  <label for="email" class="col-form-label pt-0 pb-1 w-100">Email</label>
+                  <label for="email" class="col-form-label pt-0 pb-1">Email</label>
                   <input type="email" class="form-control py-2" id="email" value="emir.wicks@mail.com" readonly>
               </div>
 
