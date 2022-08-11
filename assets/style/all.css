@@ -11586,6 +11586,23 @@ main {
   font-family: 'Roboto Mono';
 }
 
+.icon {
+  color: #212529;
+}
+
+.icon:hover {
+  color: #198754;
+}
+
+.px-p-32 {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.p-p-32 {
+  padding: 32px;
+}
+
 .dashboard {
   min-width: 296px;
   min-height: 100vh;
@@ -11632,18 +11649,23 @@ main {
   display: inline-block;
 }
 
-.icon {
-  color: #212529;
-}
-
-.icon:hover {
-  color: #198754;
-}
-
 .list-group-item.active {
   color: #000;
   background-color: #f8f9fa;
   border: 1px solid #ced4da;
+}
+
+.add-btn {
+  text-decoration: none;
+  color: #000;
+}
+
+.add-btn:hover {
+  color: #198754;
+}
+
+.modal-header {
+  padding: 32px;
 }
 
 /*# sourceMappingURL=all.css.map */

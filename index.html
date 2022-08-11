@@ -25,7 +25,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link link-success d-flex active" aria-current="index" href="index.html">
+          <a class="nav-link link-success d-flex" aria-current="index" href="index.html">
             <span class="material-icons me-3 d-block">assignment</span>Assignment
           </a>
         </li>
@@ -35,7 +35,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link link-success d-flex" href="#">
+          <a class="nav-link link-success d-flex" href="admin.html">
             <span class="material-icons me-3 d-block">people</span>Admin
           </a>
         </li>
@@ -57,7 +57,7 @@
 
     
 
-<div class="container">
+<div class="container-fluid">
     <header class=" d-flex justify-content-between align-items-center">
         <div class="d-flex align-items-center">
             <h1 class="fw-bold me-5">Assignment</h1>
@@ -148,7 +148,7 @@
             </div>
 
             <div class="col-8">
-                <div class="tab-content mb-3" id="nav-tabContent">
+                <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
                         <div class="card">
                             <div class="card-header d-flex justify-content-between align-items-center">
@@ -224,33 +224,145 @@
                                         </div>
                                     </div>
                                 </div>
-                                
-                            </div>
-                        </div>
-                        <!-- Reply ckeditor -->
-                        <div class="collapse multi-collapse" id="collapseEdit">
-                            <div class="card border-0">
-                                <div id="editor"></div>
-                            </div>
-                            <div class="card-body">
-                                <div class="d-flex gap-3 justify-content-end">
-                                    <button type="button" class="btn btn-outline-success fw-bold py-2 px-4 cancel-btn" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="collapseReply collapseEdit">Cancel</button>
-                                    <button type="button" class="btn btn-success fw-bold py-2 px-4">Reply</button>
-                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-                        123
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <div class="card-header-left">
+                                    <p class="fs-7 text-dark mb-0">
+                                        Chapter Assignment 1 / HTML&CSS
+                                    </p>
+                                    <p class="fw-bold text-dark mb-0">
+                                        My Homework
+                                    </p>
+                                </div>
+                                <a class="d-block icon" href="#">
+                                    <span class="material-icons">more_vert</span>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <!-- 學生問題 -->
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <img src="assets/images/emilywang.jpeg" alt="student" width="40" height="40" class="rounded-circle">
+                                    </div>
+                                    <div class="flex-grow-1 ms-2 border-bottom pb-4 mb-4">
+                                        <p class="text-dark fw-bold fs-6 mb-1">David Xu</p>
+                                        <p class="text-secondary fs-7 mb-3">10:38 AM (4 hours ago)</p>
+                                        <p class="text-dark fs-6">
+                                            Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: 
+                                            Why in the following code the height of the <code class="text-success bg-light px-1 ff-roboto-mono">div</code> is bigger than the height of the 
+                                            <code class="text-success bg-light px-1 ff-roboto-mono">img</code> 
+                                            ? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br>
+                                            What is the gap or extra space below image?
+                                        </p>
+                                        
+                                        <a href="#" class="btn btn-light border py-2 fw-bold" download="HW-2-David.zip">
+                                            <p class="d-flex mb-0"><span class="material-icons d-block">attach_file</span>HW-2-David.zip</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-                        456
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <div class="card-header-left">
+                                    <p class="fs-7 text-dark mb-0">
+                                        Final Assignment / HTML&CSS
+                                    </p>
+                                    <p class="fw-bold text-dark mb-0">
+                                        Have a problem with this…
+                                    </p>
+                                </div>
+                                <a class="d-block icon" href="#">
+                                    <span class="material-icons">more_vert</span>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <!-- 學生問題 -->
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <img src="assets/images/emilywang.jpeg" alt="student" width="40" height="40" class="rounded-circle">
+                                    </div>
+                                    <div class="flex-grow-1 ms-2 border-bottom pb-4 mb-4">
+                                        <p class="text-dark fw-bold fs-6 mb-1">Tony Wei</p>
+                                        <p class="text-secondary fs-7 mb-3">10:38 AM (4 hours ago)</p>
+                                        <p class="text-dark fs-6">
+                                            Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: 
+                                            Why in the following code the height of the <code class="text-success bg-light px-1 ff-roboto-mono">div</code> is bigger than the height of the 
+                                            <code class="text-success bg-light px-1 ff-roboto-mono">img</code> 
+                                            ? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br>
+                                            What is the gap or extra space below image?
+                                        </p>
+                                        
+                                        <a href="#" class="btn btn-light border py-2 fw-bold" download="HW-2-David.zip">
+                                            <p class="d-flex mb-0"><span class="material-icons d-block">attach_file</span>HW-2-David.zip</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-                        789
+                        <div class="card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <div class="card-header-left">
+                                    <p class="fs-7 text-dark mb-0">
+                                        Final Assignment / HTML&CSS
+                                    </p>
+                                    <p class="fw-bold text-dark mb-0">
+                                        Did I do it right?
+                                    </p>
+                                </div>
+                                <a class="d-block icon" href="#">
+                                    <span class="material-icons">more_vert</span>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <!-- 學生問題 -->
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0">
+                                        <img src="assets/images/emilywang.jpeg" alt="student" width="40" height="40" class="rounded-circle">
+                                    </div>
+                                    <div class="flex-grow-1 ms-2 border-bottom pb-4 mb-4">
+                                        <p class="text-dark fw-bold fs-6 mb-1">Christina Lin</p>
+                                        <p class="text-secondary fs-7 mb-3">10:38 AM (4 hours ago)</p>
+                                        <p class="text-dark fs-6">
+                                            Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: 
+                                            Why in the following code the height of the <code class="text-success bg-light px-1 ff-roboto-mono">div</code> is bigger than the height of the 
+                                            <code class="text-success bg-light px-1 ff-roboto-mono">img</code> 
+                                            ? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br>
+                                            What is the gap or extra space below image?
+                                        </p>
+                                        
+                                        <a href="#" class="btn btn-light border py-2 fw-bold" download="HW-2-David.zip">
+                                            <p class="d-flex mb-0"><span class="material-icons d-block">attach_file</span>HW-2-David.zip</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="d-flex justify-content-between align-items-center reply-footer">
+                
+                <!-- Reply ckeditor -->
+                <div class="collapse multi-collapse mt-0" id="collapseEdit">
+                    <div class="card border-0">
+                        <div id="editor"></div>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex gap-3 justify-content-end">
+                            <button type="button" class="btn btn-outline-success fw-bold py-2 px-4 cancel-btn" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="collapseReply collapseEdit">Cancel</button>
+                            <button type="button" class="btn btn-success fw-bold py-2 px-4">Reply</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center reply-footer mt-3">
                     <div class="d-flex gap-4">
                         <a class="d-block icon" href="#">
                             <span class="material-icons">arrow_back_ios</span>
@@ -260,8 +372,8 @@
                         </a>
                     </div>
                     <div class="d-flex gap-3">
-                        <button type="button" class="btn btn-outline-success fw-bold py-2 px-4">Mark as read</button>
-                        <button type="button" class="btn btn-success fw-bold py-2 px-4 reply-btn" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="collapseReply collapseEdit">Reply</button>
+                        <button type="button" class="btn btn-outline-success fw-bold py-2 px-p-32">Mark as read</button>
+                        <button type="button" class="btn btn-success fw-bold py-2 px-p-32 reply-btn" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="collapseReply collapseEdit">Reply</button>
                     </div>
                 </div>
             </div>
