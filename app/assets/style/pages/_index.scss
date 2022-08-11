@@ -13,13 +13,6 @@
     display: inline-block;
 }
 
-.icon {
-    color: $gray-900;
-    &:hover {
-        color: $success;
-    }
-}
-
 .list-group-item.active {
     color: $black;
     background-color: $gray-100;

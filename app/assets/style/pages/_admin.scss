@@ -1,0 +1,11 @@
+.add-btn {
+    text-decoration: none;
+    color: $black;
+    &:hover {
+        color: $success;
+    }
+}
+
+.modal-header {
+    padding: 32px;
+}

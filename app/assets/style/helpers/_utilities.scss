@@ -5,3 +5,19 @@
 .ff-roboto-mono {
     font-family: 'Roboto Mono';
 }
+
+
+.icon {
+    color: $gray-900;
+    &:hover {
+        color: $success;
+    }
+}
+
+.px-p-32 {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.p-p-32 {
+    padding: 32px;
+}
